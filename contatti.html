@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contatti CoffeHouse" />
+    <meta name="keywords" content="caffetteria, bar, telefono, email, contatti" />
+    <meta name="author" content="BitCamp Guppo 1" />
+
+    <meta charset="utf-8" />
+    <title>Contatti CoffeHouse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: Oswald, sans-serif;
+            background: url(sfondo.jpg) fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            text-align: center;
+            font-size: 32px;
+            background: rgba(207, 195, 139, 0.6);
+            border-radius: 30px;
+        }
+
+            header h1, h4 {
+                padding-right: 150px;
+            }
+
+            header img {
+                width: auto;
+                height: 150px;
+                float: left;
+                margin: 1px;
+                padding: 15px 0 0 15px;
+                border-radius: 40px;
+            }
+
+        nav {
+            text-align: center;
+            background: rgba(228, 219, 174, 0.6);
+            padding: 12px;
+            font-size: 24px;
+            border-radius: 20px;
+        }
+
+            nav a {
+                color: #5F5A42;
+                text-decoration: none;
+                padding: 30px;
+            }
+
+        address {
+            text-align: center;
+            background: rgba(232, 231, 228, 0.6);
+            padding: 25px;
+            margin-top:20px;
+            border-radius: 20px;
+        }
+        #campocompilato {
+            background: rgba(232, 231, 228, 0.6);
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        label{
+            color:goldenrod
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 15px;
+            background: rgba(207, 195, 139, 0.6);
+            border-radius: 20px;
+        }
+
+        button {
+            transform: scale(1.5);
+            border-color: palegoldenrod;
+            color: darkgoldenrod;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" />
+        <h1>CoffeHouse</h1>
+        <h4>Our Coffe, Your Home</h4>
+    </header>
+
+    <!--NavBar-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menù</a>
+        <a href="chiSiamo.html">Chi Siamo</a>
+        <a href="prenotazioni.html">Prenotazioni</a>
+    </nav>
+
+
+
+    <!--Campo da compilare-->
+    <div id="campocompilato">
+        <h3>
+            Vuoi inviarci un feedback? <br />
+            Compila il form sottostante!
+        </h3>
+        <form>
+            <!--inserimento dati-->
+            <label for="name-surname"><em>Inserisci il tuo Nome e Cognome:</em></label> <br />
+            <input type="text" id="name" name="name" placeholder="Inserisci il tuo Nome">
+            <input type="text" id="surname" name="surname" placeholder="Inserisci il tuo Cognome"> <br /> <br /> <br />
+
+            <!--Inserimento feedback-->
+            <label for="feedback"><em>Inviaci un feedback per migliorarci!</em></label> <br />
+            <textarea name="feedback" rows="6" cols="60" placeholder="Inserisci un Feedback"></textarea> <br /> <br />
+
+            <!--email insert-->
+            <label for="email-insert"><em>Inserisci una e-mail:</em></label> <br />
+            <input type="email" id="email-insert" name="email-insert" placeholder="Inserisci una Email" /> <br /> <br />
+
+            <!--Bottone submit-->
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+
+    <address>
+        Contatti<br />
+        Numero di Telefono:<br />
+        333 3333333<br />
+        Indirizzo Email<br />
+        CoffeHouse@BitCamp.it
+    </address>
+
+
+
+    <!--Footer-->
+    <footer>
+        &copy; 2024, Gruppo 1 Bitcamp. Tutti i diritti riservati.
+    </footer>
+
+</body>
+</html>
